@@ -1,0 +1,219 @@
+
+
+.InputContainer {
+    display: flex;
+  align-items: center; /* Alinear verticalmente en el centro */
+  justify-content: space-between; /* Espacio entre los elementos */
+  width: 100%; /* Asegurarse de que ocupe todo el ancho disponible */
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075); 
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  height: 40px;
+    border: none;
+    outline: none;
+    caret-color:rgb(19, 19, 19);
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.5px;
+  }
+
+  .container:hover{
+    background: linear-gradient(to bottom,rgb(197, 202, 200),rgb(255, 231, 231));
+
+  }
+  .putTask{
+    display: block; /* Hacer que el párrafo sea un bloque */
+    position: relative;
+  width: 200px; /* Establecer el ancho que desees */
+  height: 40px; /* Establecer la altura que desees */
+  padding: 0; /* Eliminar el espaciado interno (padding) */
+  margin: 10px 0; /* Márgenes del cuadro */
+}
+
+  .btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: relative; /* Asegúrate de que tenga una posición relativa o absoluta */
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    left: 300px;
+  }
+  .tabletask{
+    position: relative;
+    display: flex;
+    top: 30px;
+    
+  }
+  
+  .btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    z-index: 1;
+    position: relative;
+    top: -50px;
+    left: 220px;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+  }
+  
+  .btn:hover {
+    width: 150px;
+    transition-delay: .2s;
+  }
+  
+  .btn:hover > .paragraph {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+  }
+  
+  .btn:hover > .icon-wrapper .icon {
+    transform: scale(1.1);
+  }
+  
+  .bnt:hover > .icon-wrapper .icon path {
+    stroke: black;
+  }
+  
+  .paragraph {
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-left: 20px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+  }
+  
+  .icon path {
+    stroke: #000;
+    stroke-width: 2px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+
+  .savetask {
+ /* Estilos para el botón */
+ vertical-align: middle; /* Alinear verticalmente con el input */
+ position: relative;
+ top: -50px;
+ left: 220px;
+ margin-bottom: 50px;
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .savetask:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    
+  }
+  
+  .savetask:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    
+  }
+
+ 
+.pendientes{
+    position: relative;
+    display: flex;
+    top: -100px;
+    
+}
+.Tabledone{
+   display: block;
+   position: relative;
+   top: -90px;
+
+
+}
+
+.text{
+  display: flex;
+  position: relative;
+  top: -10px;
+}
+
+.buttontask{
+
+  display: block;
+  position: relative;
+  top: -100px;
+  z-index: 0;
+}
+
+
+
+
+  
+
+
+  
+  
